@@ -24,9 +24,11 @@ I applied **QLoRA with PEFT** to fine-tune the LLaMA 3-8B model. This method is 
 - Implemented regularization techniques like dropout to combat overfitting.
 
 ### 4. Challenges
-- **Performance Issues**: Despite fine-tuning, the model underperformed compared to the initial 16-bit version, indicating overfitting and dataset challenges.
-- **SQL Complexity**: The model struggled with complex queries and database schema alignment.
+- **Memory Constraints**: I initially attempted to fine-tune a 16-bit model, but frequent crashes due to RAM limitations (particularly on an A100 in Colab) led me to switch to a 4-bit version.
+- **Performance Issues**: Despite fine-tuning, the 4-bit model underperformed compared to the initial 16-bit pre-trained model, which suggests overfitting and dataset imbalance.
+- **SQL Complexity**: The model faced difficulty with complex queries and database schema alignment.
 
 ## Key Learnings
-- **First Fine-tuning Experience**: Gained a solid understanding of model adaptation using QLoRA with PEFT.
-- **Error Analysis**: Learned to identify common pitfalls and performance bottlenecks in fine-tuning.
+- **First Fine-tuning Experience**: This project taught me the intricacies of model adaptation using QLoRA with PEFT.
+- **Local Inference and Deployment**: Learned how to deploy a model from hugging face locally using Ollama and manage fine-tuning tasks using google colab to enable access to GPUs.
+- **Error Analysis**: Gained experience in identifying common bottlenecks and failure modes during fine-tuning.
