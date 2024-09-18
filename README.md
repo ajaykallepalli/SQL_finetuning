@@ -29,6 +29,6 @@ I applied **QLoRA** to fine-tune the LLaMA 3-8B model. This method is designed f
 - **SQL Complexity**: The model faced difficulty with complex queries and database schema alignment.
 
 ## Key Learnings
-- **First Fine-tuning Experience**: This project taught me the intricacies of model adaptation using QLoRA with PEFT.
+- **First Fine-tuning Experience**: This project taught me the intricacies of model adaptation using QLoRA.
 - **Local Inference and Deployment**: Learned how to deploy a model from hugging face locally using Ollama and manage fine-tuning tasks using google colab to enable access to GPUs.
 - **Error Analysis**: Gained experience in identifying common bottlenecks and failure modes during fine-tuning.
