@@ -18,13 +18,13 @@ I selected **Spider 1.0**, a complex cross-domain dataset designed for text-to-S
 - **Schema Linking** to improve model understanding of database context.
 - **Sequence Length Management**: Managed the input/output sequence length to ensure optimal model performance.
 
-### 3. Fine-tuning (QLoRA with PEFT)
-I applied **QLoRA with PEFT** to fine-tune the LLaMA 3-8B model. This method is designed for efficient fine-tuning by freezing most of the model’s parameters and only training a small subset.
+### 3. Fine-tuning (QLoRA)
+I applied **QLoRA** to fine-tune the LLaMA 3-8B model. This method is designed for efficient fine-tuning by freezing most of the model’s parameters and only training a small subset.
 - Experimented with various hyperparameters (batch size, learning rate).
 - Implemented regularization techniques like dropout to combat overfitting.
 
 ### 4. Challenges
-- **Memory Constraints**: I initially attempted to fine-tune a 16-bit model, but frequent crashes due to RAM limitations (particularly on an A100 in Colab) led me to switch to a 4-bit version.
+- **Memory Constraints**: I initially attempted to fine-tune a 16-bit model, but frequent crashes due to RAM limitations (particularly on an A100 in Colab) led me to switch to a 4-bit version. Also required to lower the batch size and gradient accumulation steps.
 - **Performance Issues**: Despite fine-tuning, the 4-bit model underperformed compared to the initial 16-bit pre-trained model, which suggests overfitting and dataset imbalance.
 - **SQL Complexity**: The model faced difficulty with complex queries and database schema alignment.
 
