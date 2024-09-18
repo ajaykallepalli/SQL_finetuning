@@ -1,7 +1,7 @@
 # Fine-tuning Large Language Models for SQL Query Generation
 
 ## Overview
-This project focuses on fine-tuning a pre-trained LLaMA 3-8B model to generate SQL queries from natural language inputs. This was my first attempt at fine-tuning an LLM, and I used **QLoRA with PEFT** (Parameter-Efficient Fine-Tuning) to adapt the model for the task. 
+This project focuses on fine-tuning a LLaMA 3-8B completion model to generate SQL queries from natural language inputs. This was my first attempt at fine-tuning an LLM, and I used **QLoRA with PEFT** (Parameter-Efficient Fine-Tuning) to adapt the model for the task. 
 
 ## Motivation
 As I am taking an SQL course thought it would be relevant and fun to see how it performs at learning compared to me. Overall this project was an opportunity to strengthen my understanding of SQL while gaining hands-on experience with LLM fine-tuning.
