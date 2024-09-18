@@ -1,7 +1,7 @@
 # Fine-tuning Large Language Models for SQL Query Generation
 
 ## Overview
-This project focuses on fine-tuning a LLaMA 3-8B completion model to generate SQL queries from natural language inputs. This was my first attempt at fine-tuning an LLM, and I used **QLoRA** to adapt the model for the task. Ultimately the model performed worse than the base model for out of sample query generation but I learnt a lot and have the key learnings and future points to address in the key learnings below.
+This project focuses on fine-tuning a LLaMA 3-8B completion model to generate SQL queries from natural language inputs. This was my first attempt at fine-tuning an LLM, and I used **QLoRA** to adapt the model for the task. Ultimately the model performed worse than the base model for out of sample query generation but I learnt a lot and have the future points to address in the key learnings below.
 
 ## Motivation
 As I am taking an SQL course thought it would be relevant and fun to see how it performs at learning compared to me. Overall this project was an opportunity to strengthen my understanding of SQL while gaining hands-on experience with LLM fine-tuning.
